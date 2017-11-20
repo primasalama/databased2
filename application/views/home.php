@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <li class="cbp-item psychiatrist">
                   <a href="assets/doctors/member1.php" class="cbp-caption cbp-singlePage">
                     <div class="cbp-caption-defaultWrap">
-                      <img src="assets/img/team/1.jpg" alt="" width="100%">
+                      <img src="<?php echo base_url();?>assets/img/team/1.jpg" alt="" width="100%"/>
                     </div>
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
@@ -86,7 +86,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <li class="cbp-item cardiologist">
                   <a href="assets/doctors/member2.html" class="cbp-caption cbp-singlePage">
                     <div class="cbp-caption-defaultWrap">
-                      <img src="assets/img/team/2.jpg" alt="" width="100%">
+                      <img src="<?php echo base_url();?>assets/img/team/2.jpg" alt="" width="100%"/>
                     </div>
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
@@ -102,7 +102,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <li class="cbp-item cardiologist">
                   <a href="assets/doctors/member3.html" class="cbp-caption cbp-singlePage">
                     <div class="cbp-caption-defaultWrap">
-                      <img src="assets/img/team/3.jpg" alt="" width="100%">
+                      <img src="<?php echo base_url();?>assets/img/team/3.jpg" alt="" width="100%"/>
                     </div>
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
@@ -118,7 +118,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <li class="cbp-item neurologist">
                   <a href="assets/doctors/member4.html" class="cbp-caption cbp-singlePage">
                     <div class="cbp-caption-defaultWrap">
-                      <img src="assets/img/team/4.jpg" alt="" width="100%">
+                      <img src="<?php echo base_url();?>assets/img/team/4.jpg" alt="" width="100%"/>
                     </div>
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
