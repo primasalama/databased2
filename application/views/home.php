@@ -44,188 +44,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- /Section: intro -->
 
     <!-- Section: boxes -->
-    <section id="boxes" class="home-section paddingtop-80">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 col-md-3">
-            <div class="wow fadeInUp" data-wow-delay="0.2s">
-              <div class="box text-center">
-
-                <i class="fa fa-check fa-3x circled bg-skin"></i>
-                <h4 class="h-bold">Make an appoinment</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-3">
-            <div class="wow fadeInUp" data-wow-delay="0.2s">
-              <div class="box text-center">
-
-                <i class="fa fa-list-alt fa-3x circled bg-skin"></i>
-                <h4 class="h-bold">Choose your package</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-3">
-            <div class="wow fadeInUp" data-wow-delay="0.2s">
-              <div class="box text-center">
-                <i class="fa fa-user-md fa-3x circled bg-skin"></i>
-                <h4 class="h-bold">Help by specialist</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-3">
-            <div class="wow fadeInUp" data-wow-delay="0.2s">
-              <div class="box text-center">
-
-                <i class="fa fa-hospital-o fa-3x circled bg-skin"></i>
-                <h4 class="h-bold">Get diagnostic report</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
     <!-- /Section: boxes -->
-
-
-    <section id="callaction" class="home-section paddingtop-40">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="callaction bg-gray">
-              <div class="row">
-                <div class="col-md-8">
-                  <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="cta-text">
-                      <h3>In an emergency? Need help now?</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit uisque interdum ante eget faucibus. </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="wow lightSpeedIn" data-wow-delay="0.1s">
-                    <div class="cta-btn">
-                      <a href="#" class="btn btn-skin btn-lg">Book an appoinment</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
     <!-- Section: services -->
-    <section id="service" class="home-section nopadding paddingtop-60">
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-sm-6 col-md-6">
-            <div class="wow fadeInUp" data-wow-delay="0.2s">
-              <img src="<?php echo base_url();?>assets/img/dummy/img-1.jpg" class="img-responsive" alt="" />
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-3">
-
-            <div class="wow fadeInRight" data-wow-delay="0.1s">
-              <div class="service-box">
-                <div class="service-icon">
-                  <span class="fa fa-stethoscope fa-3x"></span>
-                </div>
-                <div class="service-desc">
-                  <h5 class="h-light">Medical checkup</h5>
-                  <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="wow fadeInRight" data-wow-delay="0.2s">
-              <div class="service-box">
-                <div class="service-icon">
-                  <span class="fa fa-wheelchair fa-3x"></span>
-                </div>
-                <div class="service-desc">
-                  <h5 class="h-light">Nursing Services</h5>
-                  <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
-                </div>
-              </div>
-            </div>
-            <div class="wow fadeInRight" data-wow-delay="0.3s">
-              <div class="service-box">
-                <div class="service-icon">
-                  <span class="fa fa-plus-square fa-3x"></span>
-                </div>
-                <div class="service-desc">
-                  <h5 class="h-light">Pharmacy</h5>
-                  <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-          <div class="col-sm-3 col-md-3">
-
-            <div class="wow fadeInRight" data-wow-delay="0.1s">
-              <div class="service-box">
-                <div class="service-icon">
-                  <span class="fa fa-h-square fa-3x"></span>
-                </div>
-                <div class="service-desc">
-                  <h5 class="h-light">Gyn Care</h5>
-                  <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="wow fadeInRight" data-wow-delay="0.2s">
-              <div class="service-box">
-                <div class="service-icon">
-                  <span class="fa fa-filter fa-3x"></span>
-                </div>
-                <div class="service-desc">
-                  <h5 class="h-light">Neurology</h5>
-                  <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
-                </div>
-              </div>
-            </div>
-            <div class="wow fadeInRight" data-wow-delay="0.3s">
-              <div class="service-box">
-                <div class="service-icon">
-                  <span class="fa fa-user-md fa-3x"></span>
-                </div>
-                <div class="service-desc">
-                  <h5 class="h-light">Sleep Center</h5>
-                  <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
     <!-- /Section: services -->
-
-
     <!-- Section: team -->
     <section id="doctor" class="home-section bg-gray paddingbot-60">
       <div class="container marginbot-50">
@@ -233,8 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="col-lg-8 col-lg-offset-2">
             <div class="wow fadeInDown" data-wow-delay="0.1s">
               <div class="section-heading text-center">
-                <h2 class="h-bold">Doctors</h2>
-                <p>Ea melius ceteros oportere quo, pri habeo viderer facilisi ei</p>
+                <h3 class="h-bold">Deputi Bidang Koordinasi Sumber Daya Alam dan Jasa</h3>
               </div>
             </div>
             <div class="divider-short"></div>
@@ -245,24 +65,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-
-            <div id="filters-container" class="cbp-l-filters-alignLeft">
-              <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All (
-                <div class="cbp-filter-counter"></div>)</div>
-              <div data-filter=".cardiologist" class="cbp-filter-item">Cardiologist (
-                <div class="cbp-filter-counter"></div>)</div>
-              <div data-filter=".psychiatrist" class="cbp-filter-item">Psychiatrist (
-                <div class="cbp-filter-counter"></div>)</div>
-              <div data-filter=".neurologist" class="cbp-filter-item">Neurologist (
-                <div class="cbp-filter-counter"></div>)</div>
-            </div>
-
             <div id="grid-container" class="cbp-l-grid-team">
               <ul>
                 <li class="cbp-item psychiatrist">
-                  <a href="doctors/member1.html" class="cbp-caption cbp-singlePage">
+                  <a href="assets/doctors/member1.php" class="cbp-caption cbp-singlePage">
                     <div class="cbp-caption-defaultWrap">
-                      <img src="<?php echo base_url();?>assets/img/team/1.jpg" alt="" width="100%">
+                      <img src="assets/img/team/1.jpg" alt="" width="100%">
                     </div>
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
@@ -272,13 +80,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       </div>
                     </div>
                   </a>
-                  <a href="doctors/member1.html" class="cbp-singlePage cbp-l-grid-team-name">Alice Grue</a>
+                  <a href="doctors/member1.php" class="cbp-singlePage cbp-l-grid-team-name">Alice Grue</a>
                   <div class="cbp-l-grid-team-position">Psychiatrist</div>
                 </li>
                 <li class="cbp-item cardiologist">
-                  <a href="doctors/member2.html" class="cbp-caption cbp-singlePage">
+                  <a href="assets/doctors/member2.html" class="cbp-caption cbp-singlePage">
                     <div class="cbp-caption-defaultWrap">
-                      <img src="<?php echo base_url();?>assets/img/team/2.jpg" alt="" width="100%">
+                      <img src="assets/img/team/2.jpg" alt="" width="100%">
                     </div>
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
@@ -292,9 +100,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <div class="cbp-l-grid-team-position">Cardiologist</div>
                 </li>
                 <li class="cbp-item cardiologist">
-                  <a href="doctors/member3.html" class="cbp-caption cbp-singlePage">
+                  <a href="assets/doctors/member3.html" class="cbp-caption cbp-singlePage">
                     <div class="cbp-caption-defaultWrap">
-                      <img src="<?php echo base_url();?>assets/img/team/3.jpg" alt="" width="100%">
+                      <img src="assets/img/team/3.jpg" alt="" width="100%">
                     </div>
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
@@ -308,9 +116,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <div class="cbp-l-grid-team-position">Cardiologist</div>
                 </li>
                 <li class="cbp-item neurologist">
-                  <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                  <a href="assets/doctors/member4.html" class="cbp-caption cbp-singlePage">
                     <div class="cbp-caption-defaultWrap">
-                      <img src="<?php echo base_url();?>assets/img/team/4.jpg" alt="" width="100%">
+                      <img src="assets/img/team/4.jpg" alt="" width="100%">
                     </div>
                     <div class="cbp-caption-activeWrap">
                       <div class="cbp-l-caption-alignCenter">
@@ -329,173 +137,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
         </div>
       </div>
-
     </section>
     <!-- /Section: team -->
-
-
-
     <!-- Section: works -->
-    <section id="facilities" class="home-section paddingbot-60">
-      <div class="container marginbot-50">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="wow fadeInDown" data-wow-delay="0.1s">
-              <div class="section-heading text-center">
-                <h2 class="h-bold">Our facilities</h2>
-                <p>Ea melius ceteros oportere quo, pri habeo viderer facilisi ei</p>
-              </div>
-            </div>
-            <div class="divider-short"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="wow bounceInUp" data-wow-delay="0.2s">
-              <div id="owl-works" class="owl-carousel">
-                <div class="item"><a href="img/photo/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"><img src="<?php echo base_url();?>assets/img/photo/1.jpg" class="img-responsive" alt="img"></a></div>
-                <div class="item"><a href="img/photo/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="<?php echo base_url();?>assets/img/photo/2.jpg" class="img-responsive " alt="img"></a></div>
-                <div class="item"><a href="img/photo/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/3@2x.jpg"><img src="<?php echo base_url();?>assets/img/photo/3.jpg" class="img-responsive " alt="img"></a></div>
-                <div class="item"><a href="img/photo/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/4@2x.jpg"><img src="<?php echo base_url();?>assets/img/photo/4.jpg" class="img-responsive " alt="img"></a></div>
-                <div class="item"><a href="img/photo/5.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/5@2x.jpg"><img src="<?php echo base_url();?>assets/img/photo/5.jpg" class="img-responsive " alt="img"></a></div>
-                <div class="item"><a href="img/photo/6.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/6@2x.jpg"><img src="<?php echo base_url();?>assets/img/photo/6.jpg" class="img-responsive " alt="img"></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- /Section: works -->
-
-
-    
-
-
     <!-- Section: pricing -->
-    <section id="pricing" class="home-section bg-gray paddingbot-60">
-      <div class="container marginbot-50">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="wow lightSpeedIn" data-wow-delay="0.1s">
-              <div class="section-heading text-center">
-                <h2 class="h-bold">Health packages</h2>
-                <p>Take charge of your health today with our specially designed health packages</p>
-              </div>
-            </div>
-            <div class="divider-short"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-sm-4 pricing-box">
-            <div class="wow bounceInUp" data-wow-delay="0.1s">
-              <div class="pricing-content general">
-                <h2>Basic Fit 1 Package</h2>
-                <h3>$33<sup>.99</sup> <span>/ one time</span></h3>
-                <ul>
-                  <li>Anthropometry (BMI, WH Ratio) <i class="fa fa-check icon-success"></i></li>
-                  <li>Post Examination Review <i class="fa fa-check icon-success"></i></li>
-                  <li>General Screening – Basic <i class="fa fa-check icon-success"></i></li>
-                  <li><del>Health Screening Report</del> <i class="fa fa-times icon-danger"></i></li>
-                </ul>
-
-                <div class="price-bottom">
-                  <a href="#" class="btn btn-skin btn-lg">Purchase</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4 pricing-box featured-price">
-            <div class="wow bounceInUp" data-wow-delay="0.3s">
-              <div class="pricing-content featured">
-                <h2>Golden Glow Package</h2>
-                <h3>$65<sup>.99</sup> <span>/ one time</span></h3>
-                <ul>
-                  <li>Anthropometry (BMI, WH Ratio) <i class="fa fa-check icon-success"></i></li>
-                  <li>Post Examination Review <i class="fa fa-check icon-success"></i></li>
-                  <li>General Screening – Basic <i class="fa fa-check icon-success"></i></li>
-                  <li>Body Composition Analysis <i class="fa fa-check icon-success"></i></li>
-                  <li>GR Assessment & Scoring <i class="fa fa-check icon-success"></i></li>
-                </ul>
-
-                <div class="price-bottom">
-                  <a href="#" class="btn btn-skin btn-lg">Purchase</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4 pricing-box">
-            <div class="wow bounceInUp" data-wow-delay="0.2s">
-              <div class="pricing-content general last">
-                <h2>Basic Fit 2 Package</h2>
-                <h3>$47<sup>.99</sup> <span>/ one time</span></h3>
-                <ul>
-                  <li>Anthropometry (BMI, WH Ratio) <i class="fa fa-check icon-success"></i></li>
-                  <li>Post Examination Review <i class="fa fa-check icon-success"></i></li>
-                  <li>General Screening – Regular <i class="fa fa-check icon-success"></i></li>
-                  <li><del>Health Screening Report</del> <i class="fa fa-times icon-danger"></i></li>
-                </ul>
-
-                <div class="price-bottom">
-                  <a href="#" class="btn btn-skin btn-lg">Purchase</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
     <!-- /Section: pricing -->
 
-    <section id="partner" class="home-section paddingbot-60">
-      <div class="container marginbot-50">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="wow lightSpeedIn" data-wow-delay="0.1s">
-              <div class="section-heading text-center">
-                <h2 class="h-bold">Our partner</h2>
-                <p>Take charge of your health today with our specially designed health packages</p>
-              </div>
-            </div>
-            <div class="divider-short"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-md-3">
-            <div class="partner">
-              <a href="#"><img src="<?php echo base_url();?>assets/img/dummy/partner-1.jpg" alt="" /></a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="partner">
-              <a href="#"><img src="<?php echo base_url();?>assets/img/dummy/partner-2.jpg" alt="" /></a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="partner">
-              <a href="#"><img src="<?php echo base_url();?>assets/img/dummy/partner-3.jpg" alt="" /></a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="partner">
-              <a href="#"><img src="<?php echo base_url();?>assets/img/dummy/partner-4.jpg" alt="" /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
