@@ -86,8 +86,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <li><a href="index.html">Rencana Strategis Deputi 2</a></li>
                 <li><a href="index-form.html">LAKIP Deputi 2</a></li>
                 <li><a href="index-video.html">Perundang-Undangan Deputi 2</a></li>
-                <li><a href="index-video.html">BSC</a></li>
-                <li><a href="index-video.html">Simoniks</a></li>
+                <li><a href="http://128.199.154.151/bsc_maritim/" target="_new">BSC</a></li>
+                <li><a href="http://202.169.46.214/simoniks/" target="_new">Simoniks</a></li>
                 <li><a href="index-video.html">Sipoa</a></li>
                 <li><a href="index-video.html">Infografis</a></li>
               </ul>

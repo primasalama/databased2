@@ -5,20 +5,12 @@
           <div class="col-sm-6 col-md-4">
             <div class="wow fadeInDown" data-wow-delay="0.1s">
               <div class="widget">
-                <h5>About Medicio</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, ne nam purto nihil impetus, an facilisi accommodare sea
-                </p>
-              </div>
-            </div>
-            <div class="wow fadeInDown" data-wow-delay="0.1s">
-              <div class="widget">
                 <h5>Information</h5>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Laboratory</a></li>
-                  <li><a href="#">Medical treatment</a></li>
-                  <li><a href="#">Terms & conditions</a></li>
+                  <li><a href="#">Beranda</a></li>
+                  <li><a href="#">Tentang</a></li>
+                  <li><a href="#">Produk</a></li>
+                  <li><a href="#">WebGIS</a></li>
                 </ul>
               </div>
             </div>
@@ -26,28 +18,19 @@
           <div class="col-sm-6 col-md-4">
             <div class="wow fadeInDown" data-wow-delay="0.1s">
               <div class="widget">
-                <h5>Medicio center</h5>
-                <p>
-                  Nam leo lorem, tincidunt id risus ut, ornare tincidunt naqunc sit amet.
-                </p>
+                <h5>Contact Center</h5>
                 <ul>
                   <li>
                     <span class="fa-stack fa-lg">
 									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
-								</span> Monday - Saturday, 8am to 10pm
-                  </li>
-                  <li>
-                    <span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-								</span> +62 0888 904 711
+								</span> +62 21 351 9162; +62 21 2239 2573
                   </li>
                   <li>
                     <span class="fa-stack fa-lg">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-								</span> hello@medicio.com
+								</span> setdeputi.sdajasa@gmail.com
                   </li>
 
                 </ul>
@@ -58,8 +41,8 @@
             <div class="wow fadeInDown" data-wow-delay="0.1s">
               <div class="widget">
                 <h5>Our location</h5>
-                <p>The Suithouse V303, Kuningan City, Jakarta Indonesia 12940</p>
-
+                <p>Gedung BPPT-1 Lantai 8
+                Jl. M.H. Thamrin No. 8 Jakarta 10340</p>
               </div>
             </div>
             <div class="wow fadeInDown" data-wow-delay="0.1s">
@@ -83,7 +66,7 @@
             <div class="col-sm-6 col-md-6 col-lg-6">
               <div class="wow fadeInLeft" data-wow-delay="0.1s">
                 <div class="text-left">
-                  <p>&copy;Copyright - Medicio Theme. All rights reserved.</p>
+                  <p>&copy;Copyright - Bagian Program. All rights reserved.</p>
                 </div>
               </div>
             </div>
