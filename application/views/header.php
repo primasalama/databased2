@@ -75,8 +75,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tentang <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="index.html">Stuktur dan Tusi</a></li>
-                <li><a href="index-form.html">Daftar Pegawai</a></li>
+                <li><a href="<?php echo base_url();?>Struktur/index">Stuktur dan Tusi</a></li>
+                <li><a href="<?php echo base_url();?>Pegawai/index">Daftar Pegawai</a></li>
                 <li><a href="index-video.html">Denah Ruangan</a></li>
               </ul>
             </li>
