@@ -83,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produk <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="index.html">Rencana Strategis Deputi 2</a></li>
+                <li><a href="<?php echo base_url();?>Renstra/index">Rencana Strategis Deputi 2</a></li>
                 <li><a href="index-form.html">LAKIP Deputi 2</a></li>
                 <li><a href="index-video.html">Perundang-Undangan Deputi 2</a></li>
                 <li><a href="http://128.199.154.151/bsc_maritim/" target="_new">BSC</a></li>

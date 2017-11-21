@@ -66,7 +66,7 @@
             <div class="col-sm-6 col-md-6 col-lg-6">
               <div class="wow fadeInLeft" data-wow-delay="0.1s">
                 <div class="text-left">
-                  <p>&copy;Copyright - Bagian Program. All rights reserved.</p>
+                  <p>&copy;Copyright - Bagian Program. 2017.</p>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@
                       Licensing information: https://bootstrapmade.com/license/
                       Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medicio
                     -->
-                    <a href="https://bootstrapmade.com/bootstrap-education-templates/">Bootstrap Education Templates</a> by BootstrapMade
+                    <a href="https://bootstrapmade.com/bootstrap-education-templates/">Deputi Bidang Koordinasi Sumber Daya Alam dan Jasa
                   </div>
                 </div>
               </div>
