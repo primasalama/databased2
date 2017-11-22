@@ -34,9 +34,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
           </div>
           <div class="col-md-12">
-                  <div class="wow lightSpeedIn" data-wow-delay="0.1s">
-                    <div class="cta-btn">
-                      <a href="#" class="btn btn-skin btn-lg">Download Lengkap</a>
+                  <div class="wow lightSpeedIn" data-wow-delay="0.1s" >
+                    <div class="cta-btn" style="margin-top: -30px;" >
+                      <a href="<?php echo base_url();?>assets/file/Isi Renstra Deputi SDAJ 2015-2019-Perkecil-email.pdf" class="btn btn-skin btn-lg">Download Lengkap</a>
                     </div>
                   </div>
                 </div>

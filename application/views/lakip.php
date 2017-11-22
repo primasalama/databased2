@@ -35,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="col-md-12">
                   <div class="wow lightSpeedIn" data-wow-delay="0.1s">
                     <div class="cta-btn">
-                      <a href="#" class="btn btn-skin btn-lg">Download Lengkap</a>
+                      <a href="<?php echo base_url();?>assets/file/buku LAKIP 2016 FINAL CETAK.pdf" class="btn btn-skin btn-lg">Download Lengkap</a>
                     </div>
                   </div>
                 </div>
