@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row">
           <div class="col-sm-7 col-md-7">
             <div class="wow fadeInUp" data-wow-delay="0.2s">
-              <img src="img/dummy/img-1.jpg" class="img-responsive" alt="" />
+              <img src="<?php echo base_url();?>assets/img/bagan.png" class="img-responsive" alt="" />
             </div>
           </div>
           <div class="col-sm-5 col-md-5">
