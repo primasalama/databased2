@@ -7,11 +7,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Welcome to CodeIgniter</title>
-
 	<style type="text/css">
-
 	@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-
 body {
   background-image: url(assets/img/dep2.jpg);
    -webkit-background-size: 100% 100%;
@@ -116,20 +113,16 @@ body {
 </head>
 <body>
 	<div class="login" style="text-align: center;">
-<p><img  src="<?php echo base_url();?>assets/img/d21.png"/></p>
-</div>
-<div class="login">
-  <div class="login-triangle"></div>
-  
-  <h2 class="login-header">Log in</h2>
-
-  <form class="login-container">
-
-    <p><input type="email" placeholder="Email"></p>
-    <p><input type="password" placeholder="Password"></p>
-    <p><input type="submit" value="Log in"></p>
-  </form>
-</div>
-
+	<p><img  src="<?php echo base_url();?>assets/img/d21.png"/></p>
+	</div>
+	<div class="login">
+  		<div class="login-triangle"></div>
+  		<h2 class="login-header">Log in</h2>
+		<form class="login-container">
+		    <p><input type="email" placeholder="Email"></p>
+		    <p><input type="password" placeholder="Password"></p>
+		    <p><input type="submit" value="Log in"></p>
+		 </form>
+	</div>
 </body>
 </html>
