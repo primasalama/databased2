@@ -21,6 +21,13 @@ class Auth extends CI_Controller {
 		$data = [];
 		$this->load->view('login', $data, FALSE);
 	}
+	// public function index1()
+	// {
+	// 	$data = $this->db->get('user')->result_array();
+	// 	// $data = [];
+	// 	print_r($data);die();
+	// 	$this->load->view('login', $data, FALSE);
+	// }
 	public function login()
 	{
 		$data = array(
@@ -28,7 +35,7 @@ class Auth extends CI_Controller {
 			'password' => $this->input->post('password')
 		);
 		$user = $this->user_m->login($data)->result_array();
-		// print_r($user);die();
+		 // print_r($user);die();
 		$this->session->set_userdata('user',$user);
 		redirect('Welcome','refresh');
 
