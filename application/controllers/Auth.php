@@ -36,6 +36,6 @@ class Auth extends CI_Controller {
 	public function logout($value='')
 	{
 		$this->session->unset_userdata('user');
-		redirect('Auth/index','refresh');
+		redirect('Auth','refresh');
 	}
 }

@@ -26,8 +26,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </div>
             </div>
             <div class="wow lightSpeedIn" data-wow-delay="0.1s" >
-                    <div class="cta-btn pull-right">
-                      <a href="#" class="btn btn-skin btn-lg pull-right">Tambah Data Pegawai</a>
+                    <div class="cta-btn"  style="margin-right: -210px;">
+                      <a href="#" class="btn btn-skin btn-lg">Tambah Data Pegawai</a>
                     </div>
                   </div>
             </div> 
