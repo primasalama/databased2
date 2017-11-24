@@ -118,9 +118,9 @@ body {
 	<div class="login">
   		<div class="login-triangle"></div>
   		<h2 class="login-header">Log in</h2>
-		<form class="login-container">
-		    <p><input type="email" placeholder="Email"></p>
-		    <p><input type="password" placeholder="Password"></p>
+		<form class="login-container" method="POST" action="<?php echo base_url();?>Auth/login/">
+		    <p><input type="text" name="username" placeholder="Email" required="true"></p>
+		    <p><input type="password" name="password" placeholder="Password" required="true"></p>
 		    <p><input type="submit" value="Log in"></p>
 		 </form>
 	</div>

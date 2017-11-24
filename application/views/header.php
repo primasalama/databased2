@@ -93,6 +93,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </ul>
             </li>
             <li><a href="#pricing">WebGIS</a></li>
+            <?php if($this->session->userdata('user')){
+              ?><li><a href="<?php echo base_url();?>Auth/logout/">Log Out</a></li><?php
+            }?>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
