@@ -18,19 +18,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Section: services -->
     <section id="service" class="home-section">
       <div class="container">
-        <div class="col-sm-10 col-md-10">
+        <div class="col-sm-12 col-md-12">
           <div class="wow fadeInDown" data-wow-delay="0.1s">
               <div class="section-heading text-center">
                 <h3 class="h-bold">Daftar Pegawai Deputi SDA dan Jasa</h3>
                 <div class="divider-short"></div>
               </div>
             </div>
-            <div class="wow lightSpeedIn" data-wow-delay="0.1s" >
-                    <div class="cta-btn"  style="margin-right: -210px;">
-                      <a href="#" class="btn btn-skin btn-lg">Tambah Data Pegawai</a>
+          </div> 
+          <div class="col-sm-12 col-md-12">
+          <div class="wow lightSpeedIn" data-wow-delay="0.1s" >
+                    <div class="cta-btn" >
+                      <a href="<?php echo base_url();?>Pegawai/view_add" class="btn btn-skin btn-lg">Tambah Data Pegawai</a>
                     </div>
                   </div>
-            </div> 
+                </div>
+               <div class="col-sm-12 col-md-12"> 
             <div class="wow fadeInRight" data-wow-delay="0.1s">
               <div class="service-box">
                 <div class="service-desc">
@@ -175,6 +178,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   </table>
                 </div>
               </div>
+            </div>
             </div>
           </div>
       </div>

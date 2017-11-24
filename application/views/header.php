@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#intro">Beranda</a></li>
+            <li class="active"><a href="<?php echo base_url();?>Welcome">Beranda</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tentang <b class="caret"></b></a>
               <ul class="dropdown-menu">

@@ -12,4 +12,11 @@ class Pegawai extends CI_Controller {
 		$this->load->view('pegawai.php');
 		$this->load->view('footer');
 	}
+
+	public function view_add()
+	{
+		$this->load->view('header');
+		$this->load->view('addPegawai');
+		$this->load->view('footer');
+	}
 }
