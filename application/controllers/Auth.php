@@ -10,13 +10,14 @@ class Auth extends CI_Controller {
 		parent::__construct();
 		date_default_timezone_set("Asia/Jakarta");
 		$this->load->model('user_m');
-		if ($this->session->userdata('user')) {
-			redirect('Welcome','refresh');
-		}
+		
     }
 
 	public function index()
 	{
+		if ($this->session->userdata('user')) {
+			redirect('Welcome','refresh');
+		}
 		$data = [];
 		$this->load->view('login', $data, FALSE);
 	}
