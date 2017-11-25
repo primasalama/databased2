@@ -8,7 +8,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     $('#example').DataTable();
 } );
 </script>
-
+<style type="text/css">
+  .imgthumb : {width: 200px;}
+</style>
     <!-- Section: intro -->
 
     <!-- /Section: intro -->
@@ -18,19 +20,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Section: services -->
     <section id="service" class="home-section">
       <div class="container">
-        <div class="col-sm-10 col-md-10">
+        <div class="col-sm-12 col-md-12">
           <div class="wow fadeInDown" data-wow-delay="0.1s">
               <div class="section-heading text-center">
                 <h3 class="h-bold">Daftar Pegawai Deputi SDA dan Jasa</h3>
                 <div class="divider-short"></div>
               </div>
             </div>
-            <div class="wow lightSpeedIn" data-wow-delay="0.1s" >
-                    <div class="cta-btn pull-right">
-                      <a href="#" class="btn btn-skin btn-lg pull-right">Tambah Data Pegawai</a>
+          </div> 
+          <div class="col-sm-12 col-md-12">
+          <div class="wow lightSpeedIn" data-wow-delay="0.1s" >
+                    <div class="cta-btn" >
+                      <a href="<?php echo base_url();?>Pegawai/view_add" class="btn btn-skin btn-lg">Tambah Data Pegawai</a>
                     </div>
                   </div>
-            </div> 
+                </div>
+               <div class="col-sm-12 col-md-12"> 
             <div class="wow fadeInRight" data-wow-delay="0.1s">
               <div class="service-box">
                 <div class="service-desc">
@@ -41,141 +46,55 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <th>Nama</th>
                         <th>Unit</th>
                         <th>Jabatan</th>
+                        <th>Foto</th>
                         <th>Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Garrett Winters</td>
-                        <td>Accountant</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Ashton Cox</td>
-                        <td>Junior Technical Author</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Cedric Kelly</td>
-                        <td>Senior Javascript Developer</td>
-                        <td></td>
-                        <td></td>
+                      <?php $i =1;
+                      foreach ($data->result() as $key) {
+                        ?>
+                        <tr>
+                          <td><?php echo $i;?></td>
+                          <td><?php echo $key->namaPegawai;?></td>
+                          <td><?php echo $key->unit;?></td>
+                          <td><?php echo $key->jabatan;?></td>
+                          <td><img src="<?php echo base_url(); ?>assets/upload/<?php echo $key->foto;?>" style="width: 200px;height: 180px;" alt=""></td>
+                          <td>
+                            <a href="" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="" data-href="<?php echo base_url();?>pegawai/delete/<?php echo $key->idPegawai;?>" data-toggle="modal" data-target="#confirm-delete" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                          </td>
                         </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Airi Satou</td>
-                        <td>Accountant</td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Brielle Williamson</td>
-                        <td>Integration Specialist</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Herrod Chandler</td>
-                        <td>Sales Assistant</td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Rhona Davidson</td>
-                        <td>Integration Specialist</td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Colleen Hurst</td>
-                        <td>Javascript Developer</td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Sonya Frost</td>
-                        <td>Software Engineer</td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Jena Gaines</td>
-                        <td>Office Manager</td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Quinn Flynn</td>
-                        <td>Support Lead</td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Charde Marshall</td>
-                        <td>Regional Director</td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Haley Kennedy</td>
-                        <td>Senior Marketing Designer</td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Tatyana Fitzpatrick</td>
-                        <td>Regional Director</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Michael Silva</td>
-                        <td>Marketing Designer</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Paul Byrd</td>
-                        <td>Chief Financial Officer (CFO)</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Gloria Little</td>
-                        <td>Systems Administrator</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
+                        <?php 
+                      $i++;}
+                      ?>
                     </tbody>
                   </table>
                 </div>
               </div>
             </div>
+            </div>
           </div>
       </div>
     </section>
+    <script type="text/javascript">
+      $('#confirm-delete').on('show.bs.modal', function(e) {
+          $(this).find('#btn-delete').attr('href', $(e.relatedTarget).data('href'));
+      });
+    </script>
+    <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Apakah anda yakin untuk menghapus salah satu pegawai ?
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-danger btn-ok" id="btn-delete">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
