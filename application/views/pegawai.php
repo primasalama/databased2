@@ -61,7 +61,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                           <td><?php echo $key->jabatan;?></td>
                           <td><img src="<?php echo base_url(); ?>assets/upload/<?php echo $key->foto;?>" style="width: 200px;height: 180px;" alt=""></td>
                           <td>
-                            <a href="" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="<?php echo base_url();?>pegawai/view_update/<?php echo $key->idPegawai;?>" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-edit"></span></a>
                             <a href="" data-href="<?php echo base_url();?>pegawai/delete/<?php echo $key->idPegawai;?>" data-toggle="modal" data-target="#confirm-delete" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                         </tr>
@@ -77,11 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
       </div>
     </section>
-    <script type="text/javascript">
-      $('#confirm-delete').on('show.bs.modal', function(e) {
-          $(this).find('#btn-delete').attr('href', $(e.relatedTarget).data('href'));
-      });
-    </script>
+
     <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -98,3 +94,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+      $('#confirm-delete').on('show.bs.modal', function(e) {
+        console.log($(e.relatedTarget).data('href'));
+          $(this).find('#btn-delete').attr('href', $(e.relatedTarget).data('href'));
+      });
+    </script>
