@@ -9,33 +9,38 @@ class Auth extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 		date_default_timezone_set("Asia/Jakarta");
-		$this->load->model('user_m');
+		$this->load->model('User_m');
 		
     }
 
 	public function index()
 	{
-		if ($this->session->userdata('user')) {
-			redirect('Welcome','refresh');
-		}
+		// if ($this->session->userdata('user')) {
+		// 	redirect('Welcome','refresh');
+		// }
 		$data = [];
 		$this->load->view('login', $data, FALSE);
 	}
-	// public function index1()
-	// {
-	// 	$data = $this->db->get('user')->result_array();
-	// 	// $data = [];
-	// 	print_r($data);die();
-	// 	$this->load->view('login', $data, FALSE);
-	// }
+	public function index1()
+	{
+		$data = $this->db->get('user')->result_array();
+		// $data = [];
+		print_r($data);die();
+		$this->load->view('login', $data, FALSE);
+	}
 	public function login()
 	{
+		// echo $this->input->post('username');die();
 		$data = array(
 			'username' => $this->input->post('username'),
 			'password' => $this->input->post('password')
 		);
-		$user = $this->user_m->login($data)->result_array();
-		 // print_r($user);die();
+		 // print_r($data);die();
+		$this->db->where('username', $this->input->post('username'));
+		$this->db->where('password', $this->input->post('password'));
+		$data = $this->User_m->login($this->input->post('username'),$this->input->post('password'));
+		// print_r($data);die();
+		$user = array('username' => $this->input->post('username'),'password' => $this->input->post('password') );
 		$this->session->set_userdata('user',$user);
 		redirect('Welcome','refresh');
 

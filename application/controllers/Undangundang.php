@@ -12,4 +12,11 @@ class Undangundang extends CI_Controller {
 		$this->load->view('uud.php');
 		$this->load->view('footer');
 	}
+
+	public function view_add()
+	{
+		$this->load->view('header');
+		$this->load->view('addUud');
+		$this->load->view('footer');
+	}
 }

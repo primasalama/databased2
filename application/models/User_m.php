@@ -1,12 +1,14 @@
 <?php
 class User_m extends CI_model {
-	public function login($value='')
+	public function login($username,$password)
 	{
 		// print_r($value);die();
-		$this->db->where($value);
-		return $this->db->get('user');
+		$this->db->select('*');
+		$this->db->where('username',$username);
+		$this->db->where('password',$password);
+		return $this->db->get('user')->result();
 	}
-	public function login1($value='')
+	public function login1($username,$password)
 	{
 		// print_r($value);die();
 		$this->db->where('username','arif');
