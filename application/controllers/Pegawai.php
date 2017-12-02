@@ -40,7 +40,7 @@ class Pegawai extends CI_Controller {
         if (!$this->upload->do_upload('foto')) {
             $error = $this->upload->display_errors();
             $this->session->set_flashdata('info',$error);
-            redirect('Pegawai/view_add');
+            redirect('Pegawai/addPegawai');
         } else {
             $result = $this->upload->data();
         }

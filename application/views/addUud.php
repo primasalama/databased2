@@ -40,46 +40,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <?php
                 }
                 ?>
-                <form method="POST" action="<?php echo base_url();?>Pegawai/insert" enctype="multipart/form-data">
+                <form method="POST" action="<?php echo base_url();?>Undangundang/insert" enctype="multipart/form-data">
                   <div class="form-group row">
                     <label for="staticEmail" class="col-sm-4 col-form-label">Nomor Undang-Undang</label>
                       <div class="col-sm-6">
-                        <input type="text" name="namaPegawai" class="form-control" id="inputPassword" placeholder="Nomor Undang-Undang"  required="true"> 
+                        <input type="text" name="nomor" class="form-control" id="inputPassword" placeholder="Nomor Undang-Undang"  required="true"> 
                       </div>
                   </div>
                   <div class="form-group row">
                     <label for="inputPassword" class="col-sm-4 col-form-label">Perihal Undang-Undang</label>
                       <div class="col-sm-6">
-                        <input type="text" name="unit" class="form-control" id="inputPassword" placeholder="Perihal Undang-Undang" required="true">
+                        <input type="text" name="tentang" class="form-control" id="inputPassword" placeholder="Perihal Undang-Undang" required="true">
                       </div>
                   </div>
                   <div class="form-group row">
                     <label for="inputPassword" class="col-sm-4 col-form-label">Jenis Undang-Undang</label>
                     <div class="col-sm-6">
-                      <div class="dropdown">
-                        <button class="btn btn-skin dropdown-toggle" type="button" data-toggle="dropdown">Pilih jenis Undang-Undang
-                        <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Undang-Undang</a></li>
-                          <li><a href="#">Peraturan Pemerintah</a></li>
-                          <li><a href="#">Peraturan Presiden</a></li>
-                          <li><a href="#">Keputusan Presiden</a></li>
-                          <li><a href="#">Instruksi Presiden</a></li>
-                          <li><a href="#">Peraturan Menko</a></li>
-                          <li><a href="#">Keputusan Menko</a></li>
-                          <li><a href="#">Nota Dinas Menko</a></li>
-                          <li><a href="#">Memorandum Menko</a></li>
-                          <li><a href="#">Keputusan Sesmenko</a></li>
-                          <li><a href="#">Nota Dinas Sesmenko</a></li>
-                          <li><a href="#">Memorandum Sesmenko</a></li>
-                        </ul>
-                      </div>
+                      <select class="form-control" name="idPerundangan">
+                        <?php 
+                        foreach ($perundangan as $key) {
+                          ?>
+                          <option value="<option><?php echo $key->idPerundangan;?></option>"><?php echo $key->tipePerundangan;?></option>
+                          <?php
+                        }
+                        ?>
+                      </select>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label for="inputPassword" class="col-sm-4 col-form-label">File Undang-Undang</label>
                       <div class="col-sm-6">
-                        <input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1" placeholder="Foto" required="true">
+                        <input type="file" name="fileUud" class="form-control-file" id="exampleFormControlFile1" placeholder="Foto" required="true">
                       </div>
                   </div>
                   

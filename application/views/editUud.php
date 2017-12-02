@@ -40,17 +40,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <?php
                 }
                 ?>
-                <form method="POST" action="<?php echo base_url();?>Pegawai/insert" enctype="multipart/form-data">
+                <form method="POST" action="<?php echo base_url();?>Undangundang/insert" enctype="multipart/form-data">
                   <div class="form-group row">
                     <label for="staticEmail" class="col-sm-4 col-form-label">Nomor Undang-Undang</label>
                       <div class="col-sm-6">
-                        <input type="text" name="namaPegawai" class="form-control" id="inputPassword" placeholder="Nomor Undang-Undang"  required="true"> 
+                        <input type="text" name="nomoruud" class="form-control" id="inputPassword" placeholder="Nomor Undang-Undang"  required="true"> 
                       </div>
                   </div>
                   <div class="form-group row">
                     <label for="inputPassword" class="col-sm-4 col-form-label">Perihal Undang-Undang</label>
                       <div class="col-sm-6">
-                        <input type="text" name="unit" class="form-control" id="inputPassword" placeholder="Perihal Undang-Undang" required="true">
+                        <input type="text" name="perihaluud" class="form-control" id="inputPassword" placeholder="Perihal Undang-Undang" required="true">
                       </div>
                   </div>
                   <div class="form-group row">
@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <div class="form-group row">
                     <label for="inputPassword" class="col-sm-4 col-form-label">File Undang-Undang</label>
                       <div class="col-sm-6">
-                        <input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1" placeholder="Foto" required="true">
+                        <input type="file" name="file" class="form-control-file" id="exampleFormControlFile1" placeholder="Foto" required="true">
                       </div>
                   </div>
                   

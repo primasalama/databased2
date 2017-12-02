@@ -46,18 +46,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="panel-body">
                   <div class="list-group">
                     <ul class="nav nav-stack">
-                      <li role="presentation" class="active"><a href="#">Undang-Undang</a></li>
-                      <li role="presentation"><a href="#">Peraturan Pemerintah</a></li>
-                      <li role="presentation"><a href="#">Peraturan Presiden</a></li>
-                      <li role="presentation"><a href="#">Keputusan Presiden</a></li>
-                      <li role="presentation"><a href="#">Instruksi Presiden</a></li>
-                      <li role="presentation"><a href="#">Peraturan Menko</a></li>
-                      <li role="presentation"><a href="#">Keputusan Menko</a></li>
-                      <li role="presentation"><a href="#">Nota Dinas Menko</a></li>
-                      <li role="presentation"><a href="#">Memorandum Menko</a></li>
-                      <li role="presentation"><a href="#">Keputusan Sesmenko</a></li>
-                      <li role="presentation"><a href="#">Nota Dinas Sesmenko</a></li>
-                      <li role="presentation"><a href="#">Memorandum Sesmenko</a></li>
+                      <?php foreach ($perundangan as $key) {
+                        ?>
+                        <li role="presentation"><a href="<?php echo base_url();?>Undangundang/index/<?php echo $key->idPerundangan;?>"><?php echo $key->tipePerundangan; ?></a></li>
+                        <?php
+                      } ?>
                     </ul>
                   </div>
                 </div>
@@ -80,131 +73,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>Tiger Nixon</td>
-              <td>System Architect</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Garrett Winters</td>
-              <td>Accountant</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Ashton Cox</td>
-              <td>Junior Technical Author</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Cedric Kelly</td>
-              <td>Senior Javascript Developer</td>
-              <td></td>
-              <td></td>
-              </tr>
-            <tr>
-              <td>1</td>
-              <td>Airi Satou</td>
-              <td>Accountant</td>
-              <td></td>
-              <td></td>
-              </tr>
-            <tr>
-              <td>1</td>
-              <td>Brielle Williamson</td>
-              <td>Integration Specialist</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Herrod Chandler</td>
-              <td>Sales Assistant</td>
-              <td></td>
-              <td></td>
-              </tr>
-            <tr>
-              <td>1</td>
-              <td>Rhona Davidson</td>
-              <td>Integration Specialist</td>
-              <td></td>
-              <td></td>
-              </tr>
-            <tr>
-              <td>1</td>
-              <td>Colleen Hurst</td>
-              <td>Javascript Developer</td>
-              <td></td>
-              <td></td>
-              </tr>
-            <tr>
-              <td>1</td>
-              <td>Sonya Frost</td>
-              <td>Software Engineer</td>
-              <td></td>
-              <td></td>
-              </tr>
-            <tr>
-              <td>1</td>
-              <td>Jena Gaines</td>
-              <td>Office Manager</td>
-              <td></td>
-              <td></td>
-              </tr>
-            <tr>
-              <td>1</td>
-              <td>Quinn Flynn</td>
-              <td>Support Lead</td>
-              <td></td>
-              <td></td>
-              </tr>
-            <tr>
-              <td>1</td>
-              <td>Charde Marshall</td>
-              <td>Regional Director</td>
-              <td></td>
-              <td></td>
-              </tr>
-            <tr>
-              <td>1</td>
-              <td>Haley Kennedy</td>
-              <td>Senior Marketing Designer</td>
-              <td></td>
-              <td></td>
-              </tr>
-            <tr>
-              <td>1</td>
-              <td>Tatyana Fitzpatrick</td>
-              <td>Regional Director</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Michael Silva</td>
-              <td>Marketing Designer</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Paul Byrd</td>
-              <td>Chief Financial Officer (CFO)</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Gloria Little</td>
-              <td>Systems Adm
+            <?php 
+            $i = 1;
+            foreach ($data as $key) {
+              ?>
+              <tr>
+                <td><?php echo $i;?></td>
+                <td><?php echo $key->nomor;?></td>
+                <td><?php echo $key->tentang;?></td>
+                <td><a href="<?php echo base_url();?>assets/upload/uu/<?php echo $key->fileUud;?>" class="btn btn-info">Unduh</a></td>
                 <td></td>
-            </tr>
+              </tr>
+              <?php 
+            $i++;} ?>
+            
+            
           </tbody>
         </table>
                 </div>
