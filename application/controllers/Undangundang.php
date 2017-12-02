@@ -56,4 +56,48 @@ class Undangundang extends CI_Controller {
 		$this->Perundangan_m->insert($data);
 		redirect('Undangundang','refresh');
 	}
+	public function delete($value='')
+	{
+		// echo $value;die();
+		$this->Perundangan_m->delete($value);
+		redirect('Undangundang','refresh');
+	}
+	public function view_update($value='')
+	{
+		$result['perundangan'] = $this->Perundangan_m->getall();
+		$result['data'] = $this->Perundangan_m->getid($value)->result_array();
+		// print_r($result['data']);die();
+		$this->load->view('header');
+		$this->load->view('editUud',$result);
+		$this->load->view('footer');
+	}
+	public function update($value='')
+	{
+		// print_r($_FILES['foto']);die();
+		$image = $this->input->post('fileUud');
+		if ($_FILES['fileUud']['size'] != 0) {
+			$config['upload_path'] = 'assets/upload/uu';
+        $config['allowed_types'] = 'pdf|doc|docx';
+	        // load library upload
+	        $this->load->library('upload', $config);
+	        if (!$this->upload->do_upload('fileUud')) {
+	            $error = $this->upload->display_errors();
+	            $this->session->set_flashdata('info',$error);
+	            redirect('Undangundang/view_update/'.$value);
+	            // redirect('Undangundang/addUud');
+	        } else {
+	            $result = $this->upload->data();
+	            $image = $result['orig_name'];
+	        }
+		}
+		$data = array(
+			'nomor' =>$this->input->post('nomor'),
+			'tentang'=> $this->input->post('tentang'),
+			'idPerundangan' => $this->input->post('idPerundangan'),
+			'fileUud' => $image
+		);
+		// print_r($value);die();
+		$this->Perundangan_m->update($value,$data);
+		redirect('Undangundang','refresh');
+	}
 }

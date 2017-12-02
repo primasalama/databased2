@@ -82,7 +82,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <td><?php echo $key->nomor;?></td>
                 <td><?php echo $key->tentang;?></td>
                 <td><a href="<?php echo base_url();?>assets/upload/uu/<?php echo $key->fileUud;?>" class="btn btn-info">Unduh</a></td>
-                <td></td>
+                <td>
+                            <a href="<?php echo base_url();?>Undangundang/view_update/<?php echo $key->idKumpulanUud;?>" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="" data-href="<?php echo base_url();?>Undangundang/delete/<?php echo $key->idKumpulanUud;?>" data-toggle="modal" data-target="#confirm-delete" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                          </td>
               </tr>
               <?php 
             $i++;} ?>
@@ -97,3 +100,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </div>
     </section>
+    <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Apakah anda yakin untuk menghapus salah satu pegawai ?
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-danger btn-ok" id="btn-delete">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+      $('#confirm-delete').on('show.bs.modal', function(e) {
+        console.log($(e.relatedTarget).data('href'));
+          $(this).find('#btn-delete').attr('href', $(e.relatedTarget).data('href'));
+      });
+    </script>
