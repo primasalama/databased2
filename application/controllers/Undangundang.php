@@ -37,7 +37,7 @@ class Undangundang extends CI_Controller {
 	{
 		 // setting konfigurasi upload
         $config['upload_path'] = 'assets/upload/uu';
-        $config['allowed_types'] = 'pdf|doc|docx';
+        $config['allowed_types'] = 'pdf|doc|docx|xls';
         // load library upload
         $this->load->library('upload', $config);
         if (!$this->upload->do_upload('fileUud')) {
@@ -77,7 +77,7 @@ class Undangundang extends CI_Controller {
 		$image = $this->input->post('fileUud');
 		if ($_FILES['fileUud']['size'] != 0) {
 			$config['upload_path'] = 'assets/upload/uu';
-        $config['allowed_types'] = 'pdf|doc|docx';
+        $config['allowed_types'] = 'pdf|doc|docx|xls';
 	        // load library upload
 	        $this->load->library('upload', $config);
 	        if (!$this->upload->do_upload('fileUud')) {

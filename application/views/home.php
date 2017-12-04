@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<link href="http://olinamasi.diploma.ipb.ac.id/assets/css/full-slider.css" rel="stylesheet">
-<style type="text/css">
+<link href="<?php echo base_url();?>/assets/full-slider.css" rel="stylesheet">
+<!-- <style type="text/css">
 
     .parallax { 
         /* The image used */
@@ -31,13 +31,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         padding-bottom: 90px;
     }
 
-</style>
+</style> -->
 
-    <!-- Section: intro -->
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://olinamasi.diploma.ipb.ac.id/assets/images/ipb2.jpg');"></div>
+                <div class="fill" style="background-image:url('<?php echo base_url()?>/assets/img/slides/slide1.jpg');"></div>
                 <div class="carousel-caption" style="padding-bottom: 100px;">
                     <img class="img-responsive img-center" style="width: 150px;" src="http://olinamasi.diploma.ipb.ac.id/assets/images/logo.png"></img>
                     <h1><b>OLINAMASI 2017</b></h1>
@@ -47,17 +56,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
             <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://olinamasi.diploma.ipb.ac.id/assets/images/diploma.jpg');"></div>
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('<?php echo base_url()?>/assets/img/slides/slide2.jpg');"></div>
                 <div class="carousel-caption" style="padding-bottom: 100px;">
                     <img class="img-responsive img-center" style="width: 150px;" src="http://olinamasi.diploma.ipb.ac.id/assets/images/logo.png"></img>
                     <h1><b>OLINAMASI 2017</b></h1>
                     <h2 class="">Program Diploma IPB</h2>
-                    <p>7 Agustus - 13 Oktober 2017</p>
-                    <h2><a href="http://olinamasi.diploma.ipb.ac.id/#jadwal" class="btn btn-primary">Lihat Jadwal</a></h2>
+                    <p>"Berkarya Bersama, Berprestasi untuk Bangsa"</p>
+                    <h2><a href="http://olinamasi.diploma.ipb.ac.id/Register" class="btn btn-primary">Daftarkan Tim</a></h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('<?php echo base_url()?>/assets/img/slides/slide3.jpg');"></div>
+                <div class="carousel-caption" style="padding-bottom: 100px;">
+                    <img class="img-responsive img-center" style="width: 150px;" src="http://olinamasi.diploma.ipb.ac.id/assets/images/logo.png"></img>
+                    <h1><b>OLINAMASI 2017</b></h1>
+                    <h2 class="">Program Diploma IPB</h2>
+                    <p>"Berkarya Bersama, Berprestasi untuk Bangsa"</p>
+                    <h2><a href="http://olinamasi.diploma.ipb.ac.id/Register" class="btn btn-primary">Daftarkan Tim</a></h2>
                 </div>
             </div>
         </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
     <!-- /Section: intro -->
 
     <!-- Section: boxes -->
