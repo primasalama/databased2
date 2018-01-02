@@ -36,11 +36,12 @@ class Auth extends CI_Controller {
 			'password' => $this->input->post('password')
 		);
 		 // print_r($data);die();
-		$this->db->where('username', $this->input->post('username'));
-		$this->db->where('password', $this->input->post('password'));
+		// $this->db->where('username', $this->input->post('username'));
+		// $this->db->where('password', $this->input->post('password'));
 		$data = $this->User_m->login($this->input->post('username'),$this->input->post('password'));
 		// print_r($data);die();
-		$user = array('username' => $this->input->post('username'),'password' => $this->input->post('password') );
+		$user = $data;
+		// $user = array('username' => $this->input->post('username'),'password' => $this->input->post('password') );
 		$this->session->set_userdata('user',$user);
 		redirect('Welcome','refresh');
 

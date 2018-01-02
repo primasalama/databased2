@@ -10,7 +10,7 @@ class Welcome extends CI_Controller {
 		parent::__construct();
 		date_default_timezone_set("Asia/Jakarta");
 		// $this->load->model('user_m');
-		print_r($this->session->userdata('user'));//die();
+		// print_r($this->session->userdata('user'));//die();
 		if (!$this->session->userdata('user')) {
 			redirect('Auth','refresh');
 		}

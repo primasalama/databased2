@@ -10,7 +10,11 @@ class Undangundang extends CI_Controller {
 		parent::__construct();
 		date_default_timezone_set("Asia/Jakarta");
 		$this->load->model('Perundangan_m');
-		$this->load->model('Perundangan_m');
+		// $this->load->model('Perundangan_m');
+		if (!$this->session->userdata('user')) {
+			redirect('Auth','refresh');
+		}
+
     }
 	public function index($value='')
 	{
